@@ -1,0 +1,11 @@
+arr = array
+
+Keep track of passes
+    i from 0 to < arr.length - passes
+        swap_this_pass = false
+        if arr[i] > arr[i + 1]
+            temp = arr[i + 1]; arr[i + 1] = arr[i]; arr[i] = temp
+            swap_this_pass = true
+        if swap_this_pass == false
+            return arr
+        passes++
